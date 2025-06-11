@@ -1,0 +1,54 @@
+<html>
+<html lang="ro">
+<body bgcolor='#79bd8b' text='#2e5c3a'>
+<H1><CENTER><b><u>
+<p>Structurile repetitive</p>
+</u></b></CENTER></H1>
+<div style="position: absolute; bottom: -640px;left: 10px; width:100px; text-align:left;">
+<a href="sd.html"<H4>Înapoi</a></h4>
+</div>
+<div style="position: absolute; bottom:-660px;left: 10px; width:300px; text-align:left;">
+<a href="structuri.html"<H4>S. fundamentale</a></h4>
+</div>
+<style>
+a:link {color:#274a30; background-color: transparent; text-decoration: none;}
+a:visited {color:#274a30; background-color: transparent; text-decoration: none;}
+a:active {color:#148231; background-color: transparent; text-decoration: underline;}
+a:hover {color:#148231; background-color: transparent; text-decoration: underline;
+</style>
+<h3>
+<p>Prin această structură se execută repetat o acțiune, sau o secventă de acțiuni, atât
+timp cât condiția precizată este adevărată. Executarea repetată a unei acțiuni sau a unei secvențe de acțiuni este un concept algoritmic foarte important. Metoda de implementare a unei astfel de repetiții este structura repetitivă sau iterativă, cunoscută sub numele de ciclu sau buclă (loop), în care un grup de acțiuni, numit corpul ciclului sau iteratie, se execută repetat, sub un proces de control (testează condiție).</p>
+<p><mark style="background-color:#2b753f"><u>Exemplu:</u></mark><br>
+Se introduc de la tastatură mai multe numere, până când ultimul număr este 0, și
+trebuie să se calculeze suma numerelor. Se vor folosi două variabile de memorie:<br>
+s(suma), care va avea inițial valoarea 0, și a (valoarea care se citesțe de la tastatură). Valoarea citită a se va aduna la sumă până când valoarea lui a va fi 0, adică putem spune: cât timp a<>0, adună-l pe a la s.</p>
+<p>Algoritmul va fi:<br>
+execută s +- 0<br>
+citește valoarea lui a<br>
+testează a <> 0<br>
+execută s ‹ s + a ; citește a ;<br>
+testeazá a<>0<br>
+execută s ‹ s + a ; citește a ;<br>
+testează a<>0 până când a=0 (condiția nu mai este îndeplinită)<br>
+scrie valoarea lui s</p>
+<p>Procesul de control cuprinde trei acțiuni:<br>
+<mark style="background-color:#2b753f"><u>Inițializarea:</u></mark><br>
+Stabilește starea ințială, starea dinainte de prima parcurgere a corpului ciclului. În  exemplu, inițializarea cuprinde operația de atribuire s < 0 și
+citirea primului număr (citește a).<br>
+<mark style="background-color:#2b753f"><u>Testarea:</u></mark><br>
+Compară starea curentă cu starea care termină procesul de repetare și
+are rolul de a termina procesul de ciclare. Dacă cele două stări sunt egale, procesul de executare repetată a corpului ciclului se termină . În exemplu se compară valoarea numărului citit de la tastatură, a, cu 0 (a<>O), și se continuă executarea, repetată atât timp cât operatorul relațional furnizează valoarea „adevărat".
+Procesul de executare repetată se termină atunci când valoarea lui a este 0.<br>
+<mark style="background-color:#2b753f"><u>Modificarea:</u></mark><br>
+Schimbă starea curentă astfel încât să se avanseze către starea finală, care încheie procesul de repetare. Acțiunea de modificare face parte din corpul
+ciclului. În exemplu, modificarea constă în citirea unei noi valori a lui a
+(citește a), care poate să fie 0.</p>
+<p>Inițializarea și modificarea sunt foarte importante, deoarece prin ele trebuie să se
+ajungă la condiția de terminare. Un astfel de ciclu se numește ciclu infinit și presupune executarea unui număr infinit de pași, condiție care contrazice definiția unui algoritm. În  exemplu, nu se cunoaște de câte ori se execută structura repetitivă (condiția de terminare este valoarea lui a și nu se stie câte valori vor fi introduse pentru a până când a va avea valoarea 0).</p>
+<p>În functie de acest criteriu, există :
+<ol><li><a href="necunoscut.html" target="alfa"><H4>Structuri repetitive cu număr necunoscut de pași.</b></H4></a></li>
+<li><a href="cunoscut.html" target="alfa"><H4>Structuri repetitive cu număr cunoscut de pași.</b></H4></a></li></p>
+
+</h3>
+</html>

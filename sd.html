@@ -1,0 +1,81 @@
+<html>
+<html lang="ro">
+<body bgcolor='#79bd8b' text='#2e5c3a'>
+<H1><CENTER><b><u>
+<p>Structurile decizionale</p>
+</u></b></CENTER></H1>
+<div style="position: absolute; bottom: -1040px;right: 10px; width:100px; text-align:right;">
+<a href="sr.html"<H4>Înainte</a></h4>
+</div>
+<div style="position: absolute; bottom: -1040px;left: 10px; width:100px; text-align:left;">
+<a href="sl.html"<H4>Înapoi</a></h4>
+</div>
+<div style="position: absolute; bottom:-1060px;left: 10px; width:300px; text-align:left;">
+<a href="structuri.html"<H4>S. fundamentale</a></h4>
+</div>
+<style>
+a:link {color:#274a30; background-color: transparent; text-decoration: none;}
+a:visited {color:#274a30; background-color: transparent; text-decoration: none;}
+a:active {color:#148231; background-color: transparent; text-decoration: underline;}
+a:hover {color:#148231; background-color: transparent; text-decoration: underline;
+</style>
+<h3>
+<p>Prin această structură, se face selectarea între două sau mai multe actiuni, în funcție de anumite condiții. Există două tipuri de structuri alternative:
+<ol><li>Structura alternativă simplă,</li>
+<li>Structura alternativă generalizată.</li>
+</ol></p>
+<p><mark style="background-color:#2b753f"><u>Structura alternativă simplă:</u></mark><br>
+La acest tip de structură se face selectarea între două acțiuni, în funcție de îndeplinirea sau neîndeplinirea unei condiții.</p>
+<p><mark style="background-color:#2b753f"><u>Exemplu:</u></mark><br>
+Se introduce de la tastatură un număr n. Să se calculeze inversul acestui număr,
+inv, definit astfel:<br>
+inv= 1/n pentru nz0<br>
+0 pentru n=0 <br>
+Altfel spus: dacă n este diferit de 0,<br>
+inversul are valoarea 1/n;<br>
+altfel, are valoarea 0.</p>
+<p>Pentru calculul inversului se vor executa, în ordine, următoarele acțiuni:
+<ul>
+<li>Pasul 1. Început.</li>
+<li>Pasul 2. Comunică valoarea pentru n.</li>
+<li>Pasul 3. Dacă n<>0, atunci execută Pasul 4, altfel execută Pasul 5.</li>
+<li>Pasul 4. Calculează inv +- 1/n.</li>
+<li>Pasul 5. Calculează inv + 0.</li>
+<li>Pasul 6. Comunică valoarea lui inv.</li>
+<li>Pasul 7. Terminat.</li> </ul></p>
+<p>Executarea uneia dintre cele două acțiuni posibile depinde de condiția precizată printr-o expresie logică. Dacă expresia logică are valoarea „adevărat", se execută acțiune 1, iar dacă expresia logică are valoarea „fals", se execută acțiune 2. Cele două acțiuni pot fi descrise printr-un singur pas sau prin mai mulți pași.<br>
+Observați că acest tip de structură poate fi descris prin raționamentul dacă...atunci... altfel... sfârșit dacă (if... then. else... endif) pe care îl putem folosi în pseudocod, pentru descrierea structurii.</p>
+
+<p><mark style="background-color:#2b753f"><u>Structura alternativă generalizată:</u></mark><br>
+La acest tip de structură, se face selectarea între mai multe acțiuni, în funcție de o
+variabilă de memorie numită selector, care poate lua mai multe valori, dintr-o mulțime ordonată de elemente de acelasi tip cu selectorul.</p>
+<p><mark style="background-color:#2b753f"><u>Exemplu:</u></mark><br>
+Se introduc de la tastatură numerele întregi n, a, b și c. Să se calculeze valoarea lui e, definit astfel:<br>
+e=<br>(a+b)/c pentru n=1<br>
+(b+c)/a pentru n=2<br>
+(c+a)/b pentru n=3<br>
+Pentru calculul expresiei e se vor executa, în ordine, următoarele acțiuni:
+<ul>
+<li>Pasul 1. Început.</li>
+<li>Pasul 2. Comunică valorile pentru n, a, b, c.</li>
+<li>Pasul 3. Dacă n=1, atunci execută Pasul 4, altfel execută Pasul 5.</li>
+<li>Pasul 4. Calculează e ‹ (a+b)/c. Treci la Pasul 9.</li>
+<li>Pasul 5. Dacă n=2, atunci execută Pasul 6, altfel execută Pasul 7.</li>
+<li>Pasul 6. Calculează e ‹ (b+c)/a. Treci la Pasul 9.</li>
+<li>Pasul 7. Dacă n=3, atunci execută Pasul 4, altfel execută Pasul 9.</li>
+<li>Pasul 8. Calculează e ‹ (c+a)/b. Treci la Pasul 9.</li>
+<li>Pasul 9, Comunică valoarea lui e.</li>
+<li>Pasul 10. Terminat.</li> </ul></p>
+<p>Executarea uneia dintre acțiunile posibile depinde de valoarea selectorului. Dacă
+selectorul are valoarea v1, se execută acțiune 1, dacă are valoarea v2, se execută
+acțiune 2, ..., dacă are valoarea vn, se execută acțiune n; altfel, se execută acțiune
+n+1.<br>
+Fiecare valoare a selectorului corespunde unui caz tratat, căruia îi corespunde o acțiune care poate fi descrisă printr-un singur pas sau prin mai mulți pași.<br>
+Observați că acest tip de structură poate fi descris prin raționamentul în cazul
+caz1.. caz2. altfel... sfârsit_in_cazul_că (in case... case1... case2. else.
+endcase) pe care îl putem folosi în pseudocod, pentru descrierea structurii.</p>
+
+
+
+</h3>
+</html>
